@@ -1,0 +1,46 @@
+.divi1{
+    display:flex;
+    column-gap: 4cm;
+    align-items: center;
+    justify-content: center;
+}
+input[type=text],[type=email],[type=password], [type=tel]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+.main1{
+    position: relative;
+    left: 230px;
+    top: 100px;
+    width: 1000px;
+    height:500px;
+    background: white;
+    border: 2px solid rgba(255,255,255,0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(1px);
+    justify-content: center;
+    /* align-items: center; */
+    padding-top:1cm;
+    padding-left: 2cm;
+    padding-right: 2cm;
+    font-size: larger;
+    box-shadow: 2ch;
+}
+body{
+
+    background-image: linear-gradient( to left,blue,purple);
+}
+p{
+    background-image: linear-gradient( to left,blue,purple);
+    color:white;
+    padding: 4px;
+    text-align: center;
+    width:100%;
+    height: max-content;
+    border-radius:3px;
+    font-size: larger;
+}
+
+

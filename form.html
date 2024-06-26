@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="design.css">
+    <script>
+        function submitbtn(){
+            var n = document.getElementById("name").value;
+            var c=document.getElementById("e").value;
+            var u=document.getElementById("us").value;
+            var p=document.getElementById("ph").value;
+            var psd=document.getElementById("p").value;
+            var cpsd=document.getAnimations("cp").value;
+            var gender = document.querySelector('input[name="gender"]:checked').value;
+            document.write(`
+                <h2>Submitted Information</h2>
+                <p>Name: ${n}</p>
+                <p>Email: ${c}</p>
+                <p>Username: ${u}</p>
+                <p>Phone: ${p}</p>
+                <p>Gender: ${gender}</p>
+            `);
+            if(psd!=cpsd){
+                alert('password do not match')
+            }
+            function display(event){
+
+            }
+}
+    </script>
+</head>
+<body>
+    <div class="main1" id="m1">
+    <div class="divi1">
+        <div>
+            <h1>Registration</h1>
+            <form>
+                <label>Full Name:</label>
+                <input type="text" placeholder="Enter your name" id="name" required><br>
+                <label>Email:</label>
+                <input type="email" placeholder="Enter your Email" id="e"required><br>
+                <label>Password:</label>
+                <input type="password" placeholder="Enter your password" id="p"required><br>
+            </form>
+        </div>
+        <div>
+            <form>
+                <br><br><br><br>
+            <label>UserName:</label>
+            <input type="text" placeholder="Enter your username" id="us"required><br>
+            <label>Phone number:</label>
+            <input type="tel" placeholder="Enter your Phoneno" id="ph"required><br>
+            <label>Confirm Password:</label>
+            <input type="password" placeholder="confirm password" id="cp"><br>
+        </form>
+        </div>
+    </div>
+    <form align="center">
+        <div id="radio">
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="Male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+    </div>
+        <button type="submit" onclick="submitbtn()"id="b">Register</button>
+
+    </form>
+</div>
+</body>
+</html>
